@@ -1,0 +1,149 @@
+/* Container principal */
+.admin-products-container {
+  padding: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8f9fc;
+  color: #0b1c48;
+}
+
+/* Titre */
+.admin-products-container h2 {
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #0b1c48;
+}
+
+/* Formulaire */
+.product-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+/* Inputs */
+.product-form input,
+.product-form select {
+  flex: 1;
+  min-width: 180px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.product-form input:focus,
+.product-form select:focus {
+  outline: none;
+  border-color: #ffcc00;
+  box-shadow: 0 0 4px rgba(255,204,0,0.5);
+}
+
+/* Input file */
+.product-form input[type="file"] {
+  background: #f1f3f9;
+  border: 1px dashed #ccc;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Bouton ajouter */
+.product-form button {
+  padding: 10px 20px;
+  background: #ffcc00;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #0b1c48;
+  transition: 0.3s;
+}
+
+.product-form button:hover {
+  background: #e6b800;
+}
+
+/* Tableau */
+.products-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+/* Header */
+.products-table thead {
+  background: #0b1c48;
+  color: white;
+}
+
+.products-table th {
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+}
+
+/* Lignes */
+.products-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+/* Hover ligne */
+.products-table tbody tr:hover {
+  background: #f4f6fb;
+}
+
+/* Images produit */
+.products-table td img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 5px;
+  border: 1px solid #ddd;
+  transition: transform 0.2s;
+}
+
+.products-table td img:hover {
+  transform: scale(1.1);
+}
+
+/* Boutons actions */
+.btn-edit {
+  background: #17a2b8;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin-right: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-edit:hover {
+  background: #138496;
+}
+
+.btn-delete {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-delete:hover {
+  background: #c82333;
+}

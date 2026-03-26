@@ -1,0 +1,85 @@
+.contact-hero {
+  background: linear-gradient(rgba(0,0,60,0.8), rgba(0,0,60,0.8)),
+              url("../Assets/hero1.png") no-repeat center 20% / cover;;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+}
+
+.contact-hero span {
+  color: #ffcc00;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 10%;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* INFO */
+.contact-info {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-info h2 {
+  color: #0b1c48;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+/* FORM */
+.contact-form {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-form h2 {
+  color: #0b1c48;
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.btn-primary {
+  background: #ffcc00;
+  border: none;
+  padding: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #e6b800;
+  transition: 0.3s;
+}
+
+.contact-map {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.contact-map h2 {
+  color: #0b1c48;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.leaflet-container {
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}

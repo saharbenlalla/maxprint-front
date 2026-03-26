@@ -1,0 +1,88 @@
+/* Conteneur principal */
+.categories-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 15px;
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+/* Titre principal */
+.categories-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #222;
+}
+
+/* Grille des catégories */
+.categories-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Carte de chaque catégorie */
+.category-card {
+  width: 250px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Effet hover sur la carte */
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Image de la catégorie */
+.category-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Nom de la catégorie */
+.category-card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #111;
+}
+
+/* Description de la catégorie */
+.category-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Message de chargement ou erreur */
+.categories-container p {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .category-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-card {
+    width: 100%;
+  }
+}
