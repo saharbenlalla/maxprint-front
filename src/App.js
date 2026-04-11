@@ -18,6 +18,7 @@ import Products from "./pages/Products.jsx";
 import Services from "./pages/Services.jsx";
 import Offers from "./pages/offerPage.jsx";
 import AdminOffers from "./pages/adminOffer.jsx";
+import AdminMessages from "./pages/messagesAdmin.jsx";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/add-category" element={<CategoryForm />} />
           <Route path="/categories" element={<CategoriesList />} />
           <Route path="/admin/categories" element={<AdminCategories />} />
+          <Route path="/admin/contacts" element={<AdminMessages />} />
           <Route path="/admin" element={<AdminPage />} />
           <Route path="/admin/products" element={<AdminProducts />} />
           <Route path="/admin/services" element={<AdminServices />} />

@@ -8,7 +8,7 @@ const Portfolio = () => {
         <p>
           Découvrez nos projets d’habillage de façades et panneaux publicitaires.
         </p>
-        <button className="btn-primary">Voir Notre Portfolio</button>
+        <a href="/services"><button className="btn-primary">Voir Notre Services</button></a>
       </div>
     </section>
   );

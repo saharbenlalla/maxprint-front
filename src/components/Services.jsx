@@ -16,28 +16,28 @@ const Services = () => {
           <img src={service1} alt="Habillage Façades Alucobond" />
           <h3>Habillage Façades Alucobond</h3>
           <p>Habillage moderne et professionnel pour votre façade.</p>
-          <button className="btn-primary">Voir Plus</button>
+          <a href="/services"><button className="btn-primary">Voir Plus</button></a>
         </div>
 
         <div className="service-card">
           <img src={service2} alt="Panneaux Publicitaires" />
           <h3>Panneaux Publicitaires</h3>
           <p>Panneaux extérieurs et enseignes lumineuses.</p>
-          <button className="btn-primary">Voir Plus</button>
+          <a href="/services"><button className="btn-primary">Voir Plus</button></a>
         </div>
 
         <div className="service-card">
           <img src={service3}  alt="Décoration Intérieure & Extérieure" />
           <h3>Décoration Intérieure & Extérieure</h3>
           <p>Personnalisation complète de vos espaces.</p>
-          <button className="btn-primary">Voir Plus</button>
+          <a href="/services"><button className="btn-primary">Voir Plus</button></a>
         </div>
 
         <div className="service-card">
           <img src={service4} alt="Conception 3D & Impression Numérique" />
           <h3>Conception 3D & Impression Numérique</h3>
           <p>Maquettes 3D et impressions haute qualité.</p>
-          <button className="btn-primary">Voir Plus</button>
+          <a href="/services"><button className="btn-primary">Voir Plus</button></a>
         </div>
       </div>
     </section>

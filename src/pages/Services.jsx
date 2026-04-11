@@ -65,7 +65,7 @@ const ServicesPage = () => {
             {/* Bouton Contacter via WhatsApp */}
             <a
               className="btn-contact"
-              href={`https://wa.me/21653588626?text=Bonjour,%20je%20souhaite%20en savoir plus sur le service:%20${encodeURIComponent(
+              href={`https://wa.me/21627110822?text=Bonjour,%20je%20souhaite%20en savoir plus sur le service:%20${encodeURIComponent(
                 s.name
               )}`}
               target="_blank"

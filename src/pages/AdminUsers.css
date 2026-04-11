@@ -71,3 +71,47 @@ select.badge-admin {
 select.badge-user {
   background-color: #3498db;
 }
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  .users-table thead {
+    display: none;
+  }
+
+  .users-table,
+  .users-table tbody,
+  .users-table tr,
+  .users-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .users-table tr {
+    margin-bottom: 15px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .users-table td {
+    text-align: left;
+    padding: 8px 0;
+    position: relative;
+  }
+
+  /* Labels avant chaque champ */
+  .users-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 3px;
+    color: #555;
+  }
+
+  select {
+  font-size: 14px;
+  padding: 5px;
+}
+}

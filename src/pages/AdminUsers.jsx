@@ -48,14 +48,14 @@ function AdminUsers() {
         <tbody>
           {users.map(u => (
             <tr key={u._id}>
-              <td>
+              <td data-label="Nom">
                 {u.name}{" "}
                 <span className={`role-badge ${roleColor(u.role)}`}>
                   {u.role}
                 </span>
               </td>
-              <td>{u.email}</td>
-              <td>
+              <td data-label="Email">{u.email}</td>
+              <td data-label="Rôle">
                 <select
                   value={u.role}
                   onChange={(e) => handleRoleChange(u._id, e.target.value)}

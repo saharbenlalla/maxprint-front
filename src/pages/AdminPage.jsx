@@ -30,7 +30,9 @@ function AdminPage() {
           <Link to="/admin/offers" className="admin-link">
           Gestion des offres
         </Link>
-
+        <Link to="/admin/contacts" className="admin-link">
+          Gestion des messages
+        </Link>
       </div>
       
     </div>

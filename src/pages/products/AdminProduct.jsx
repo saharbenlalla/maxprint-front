@@ -105,7 +105,7 @@ function AdminProducts() {
 
 
 
-  // Supprimer produit
+  // Supprimer produit 
   const handleDelete = async (id) => {
 
     if (window.confirm("Supprimer ce produit ?")) {
@@ -245,10 +245,10 @@ function AdminProducts() {
 
             <tr key={p._id}>
 
-              <td>{p.name}</td>
+              <td data-label="Nom">{p.name}</td>
 
 
-              <td>
+              <td data-label="Images">
 
                 {p.images?.map((img, index) => (
 
@@ -268,14 +268,14 @@ function AdminProducts() {
               </td>
 
 
-              <td>{p.description}</td>
+              <td data-label="Description">{p.description}</td>
 
-              <td>{p.price} DT</td>
+              <td data-label="Prix">{p.price} DT</td>
 
-              <td>{p.category?.name || "-"}</td>
+              <td data-label="Catégorie">{p.category?.name || "-"}</td>
 
 
-              <td>
+              <td data-label="Actions">
 
                 <button
                   className="btn-edit"

@@ -1,0 +1,127 @@
+/* Container principal */
+.admin-messages-container {
+  padding: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8f9fc;
+  color: #0b1c48;
+}
+
+/* Titre */
+.admin-messages-container h2 {
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* TABLE */
+.messages-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+/* header */
+.messages-table thead {
+  background: #0b1c48;
+  color: white;
+}
+
+.messages-table th {
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+}
+
+/* cells */
+.messages-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+/* hover */
+.messages-table tbody tr:hover {
+  background: #f4f6fb;
+}
+
+/* status styles */
+.unread {
+  font-weight: 600;
+  background: #fffdf0;
+}
+
+.read {
+  opacity: 0.75;
+}
+
+/* buttons */
+.btn-read {
+  background: #17a2b8;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin-right: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-read:hover {
+  background: #138496;
+}
+
+.btn-delete {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background: #c82333;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .messages-table thead {
+    display: none;
+  }
+
+  .messages-table,
+  .messages-table tbody,
+  .messages-table tr,
+  .messages-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .messages-table tr {
+    margin-bottom: 15px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .messages-table td {
+    padding: 8px 0;
+  }
+
+  .messages-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 3px;
+    color: #555;
+  }
+
+  .btn-read,
+  .btn-delete {
+    width: 100%;
+    margin-top: 5px;
+  }
+}

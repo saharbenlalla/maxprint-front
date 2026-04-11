@@ -143,3 +143,85 @@
 .gallery-grid img:hover {
   transform: scale(1.05);
 }
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  /* HERO */
+  .about-hero {
+    padding: 60px 15px;
+  }
+
+  .about-hero h1 {
+    font-size: 26px;
+  }
+
+  /* CONTENT */
+  .about-content {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .about-text h2 {
+    font-size: 20px;
+  }
+
+  .about-text p {
+    font-size: 14px;
+  }
+
+  .about-text li {
+    font-size: 14px;
+  }
+
+  .about-image {
+    width: 100%;
+  }
+
+  .about-image img {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* CTA */
+  .about-cta {
+    padding: 40px 15px;
+  }
+
+  .btn-primary {
+    width: 50%;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  /* WHY US */
+  .why-us {
+    padding: 40px 20px;
+  }
+
+  .why-us h2 {
+    font-size: 22px;
+  }
+
+  .why-card {
+    padding: 20px;
+  }
+
+  /* GALLERY */
+  .gallery {
+    padding: 40px 20px;
+  }
+
+  .gallery h2 {
+    font-size: 22px;
+  }
+
+  .gallery-grid img {
+    height: 180px;
+  }
+}
